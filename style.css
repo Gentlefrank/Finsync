@@ -6,6 +6,7 @@
 body{
     box-sizing: inherit;
     margin: 0;
+    background:  radial-gradient(circle, rgba(222,230,233,1) 28%, rgba(180,206,212,1) 50%, rgba(212,237,236,1) 80%);;
 }
 
 html{
@@ -13,20 +14,37 @@ html{
 }
 
 .container{
-    width: 100%;
-    margin: 2em;
+    padding: 2em;
+    border: 1px solid black;
 }
 
 .navbar{
     height: 3rem;
     width: 100%;
-    padding: 1em;
+    padding: 2em;
     background-color: #192B2F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content{
+    display: flex;
+    gap: 2rem;
 }
 .sidebar{
-    width: 40%;
+    width: 20%;
+    border: 1px solid red;
+
+    color: #000000
+}
+
+.sidebar ul{
+    background-color: #fff;
+    border-radius: 10px;
 }
 
 .main-content{
-    width: 60%;
+    width: 80%;
+    border: 1px solid blue;
 }
